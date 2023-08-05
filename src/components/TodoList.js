@@ -3,8 +3,7 @@ import React, { useState } from 'react';
 
 import { initializeApp } from "firebase/app";
 
-import { getAnalytics } from "firebase/analytics";
-import { getStorage, ref, uploadString, getDownloadURL } from 'firebase/storage';
+import { getStorage, ref, uploadString } from 'firebase/storage';
 // TODO: Add SDKs for Firebase products that you want to use
 
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -96,6 +95,6 @@ const TodoList = () => {
 };
 
 
-const analytics = getAnalytics(app);
+
 
 export default TodoList;
